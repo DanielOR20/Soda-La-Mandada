@@ -1,0 +1,202 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "nombre": "Casado con Bistec en Salsa",
+      "descripcion": "Arroz blanco, frijoles tiernos, plátano maduro frito, ensalada verde, huevo frito y bistec de res bañadita en salsa criolla.",
+      "precio": 3800,
+      "categoria": "Casados",
+      "imagen": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "2",
+      "nombre": "Casado con Pollo a la Plancha",
+      "descripcion": "Pechuga de pollo a la plancha, acompañado de arroz, frijoles, plátano maduro, picadillo del día y ensalada de repollo.",
+      "precio": 3600,
+      "categoria": "Casados",
+      "imagen": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "3",
+      "nombre": "Gallo Pinto Especial con Todo",
+      "descripcion": "Gallo pinto tradicional costarricense, huevo picado o frito, natilla, queso Turrialba a la plancha, plátano frito y salchichón.",
+      "precio": 3000,
+      "categoria": "Desayunos",
+      "imagen": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "4",
+      "nombre": "Chifrijo La Mandada",
+      "descripcion": "Capa de arroz blanco, frijoles cubaces tiernos, chicharrón de carne crujiente, pico de gallo fresco, aguacate y chips de tortilla.",
+      "precio": 4200,
+      "categoria": "Especiales",
+      "imagen": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "5",
+      "nombre": "Gallo de Salchichón",
+      "descripcion": "Tortilla de maíz palmeada a mano con salchichón tico a la plancha y ensalada de repollo con limón.",
+      "precio": 1200,
+      "categoria": "Gallos",
+      "imagen": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "6",
+      "nombre": "Gallo de Carne Desmechada",
+      "descripcion": "Tortilla de maíz palmeada con jugosa carne de res desmechada arreglada y chimichurri tico.",
+      "precio": 1500,
+      "categoria": "Gallos",
+      "imagen": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "7",
+      "nombre": "Empanada Arreglada de Queso",
+      "descripcion": "Empanada de maíz crujiente rellena de queso fundido, servida arreglada con repollo, mayonesa y salsa de tomate.",
+      "precio": 1800,
+      "categoria": "Antojitos",
+      "imagen": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "8",
+      "nombre": "Hamburguesa Soda Especial",
+      "descripcion": "Carne de res artesanal, queso derretido, tocineta, lechuga, tomate, pepinillos y papas fritas.",
+      "precio": 3200,
+      "categoria": "Comida Rápida",
+      "imagen": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "9",
+      "nombre": "Papas Supreme con Queso y Tocino",
+      "descripcion": "Porción generosa de papas fritas bañadas en salsa de queso cheddar fundido y trocitos de tocino crujiente.",
+      "precio": 2600,
+      "categoria": "Comida Rápida",
+      "imagen": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "10",
+      "nombre": "Batido Natural de Cas en Agua o Leche",
+      "descripcion": "Refrescante batido de fruto de cas costarricense fresco, preparado en agua o leche a elección.",
+      "precio": 1500,
+      "categoria": "Bebidas",
+      "imagen": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "11",
+      "nombre": "Batido Natural de Fresa en Leche",
+      "descripcion": "Batido cremoso de fresas naturales licuadas en leche fría.",
+      "precio": 1500,
+      "categoria": "Bebidas",
+      "imagen": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "12",
+      "nombre": "Pastel de Tres Leches",
+      "descripcion": "Postre tradicional bañado en mezcla de tres leches con cobertura de chantilly y canela.",
+      "precio": 2000,
+      "categoria": "Repostería",
+      "imagen": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500&auto=format&fit=crop&q=60"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "PED-1001",
+      "cliente": "María Rodríguez",
+      "items": [
+        {
+          "id": "1",
+          "nombre": "Casado con Bistec en Salsa",
+          "precio": 3800,
+          "cantidad": 2
+        },
+        {
+          "id": "10",
+          "nombre": "Batido Natural de Cas en Agua o Leche",
+          "precio": 1500,
+          "cantidad": 2
+        }
+      ],
+      "estado": "entregado",
+      "total": 11600,
+      "fecha": "2026-09-03T11:30:00Z"
+    },
+    {
+      "id": "PED-1002",
+      "cliente": "Carlos Alvarado",
+      "items": [
+        {
+          "id": "4",
+          "nombre": "Chifrijo La Mandada",
+          "precio": 4200,
+          "cantidad": 1
+        },
+        {
+          "id": "8",
+          "nombre": "Hamburguesa Soda Especial",
+          "precio": 3200,
+          "cantidad": 1
+        }
+      ],
+      "estado": "listo",
+      "total": 8400,
+      "fecha": "2026-09-03T12:15:00Z"
+    },
+    {
+      "id": "PED-1003",
+      "cliente": "Laura Chaves",
+      "items": [
+        {
+          "id": "3",
+          "nombre": "Gallo Pinto Especial con Todo",
+          "precio": 3000,
+          "cantidad": 1
+        },
+        {
+          "id": "11",
+          "nombre": "Batido Natural de Fresa en Leche",
+          "precio": 1500,
+          "cantidad": 1
+        }
+      ],
+      "estado": "en preparación",
+      "total": 5500,
+      "fecha": "2026-09-03T13:00:00Z"
+    },
+    {
+      "id": "PED-1004",
+      "cliente": "Juan Mora",
+      "items": [
+        {
+          "id": "7",
+          "nombre": "Empanada Arreglada de Queso",
+          "precio": 1800,
+          "cantidad": 3
+        },
+        {
+          "id": "9",
+          "nombre": "Papas Supreme con Queso y Tocino",
+          "precio": 2600,
+          "cantidad": 1
+        }
+      ],
+      "estado": "pendiente",
+      "total": 9000,
+      "fecha": "2026-09-03T13:40:00Z"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "u-admin",
+      "nombre": "Administrador Soda",
+      "usuario": "admin",
+      "clave": "soda123",
+      "rol": "admin"
+    },
+    {
+      "id": "u-cocina",
+      "nombre": "Jefe de Cocina",
+      "usuario": "cocina",
+      "clave": "cocina123",
+      "rol": "cocina"
+    }
+  ]
+}
