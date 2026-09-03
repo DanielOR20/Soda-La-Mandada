@@ -1,0 +1,12 @@
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.empty-orders {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #64748b;
+  padding: 3rem;
+}

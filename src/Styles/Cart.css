@@ -1,0 +1,119 @@
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.cart-item-details h4 {
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.cart-item-price {
+  font-size: 0.85rem;
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-item-actions button {
+  background-color: #e0e0e0;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-item-actions button:hover:not(:disabled) {
+  background-color: #bdc3c7;
+}
+
+.cart-item-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-remove {
+  background-color: #e74c3c !important;
+  color: white;
+  width: auto !important;
+  padding: 0 6px;
+  font-size: 0.75rem;
+}
+
+.btn-remove:hover {
+  background-color: #c0392b !important;
+}
+
+.cart-summary {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.cart-summary h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.btn-checkout {
+  width: 100%;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-checkout:hover:not(:disabled) {
+  background-color: #219653;
+}
+
+.btn-checkout:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}

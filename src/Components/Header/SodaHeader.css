@@ -1,0 +1,19 @@
+.soda-header {
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.soda-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2rem;
+}
+
+.soda-header p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
