@@ -1,12 +1,14 @@
 import React from 'react';
 import './AdminOrderCard.css';
 
-const AdminOrderCard = ({ order, onStatusChange }) => {
+const AdminOrderCard = ({ order, onStatusChange, onDeleteOrder }) => {
+  const isProcessed = order.status === 'Listo' || order.status === 'Rechazado';
+
   return (
     <div className={`order-card status-${order.status.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className="order-header">
         <span className="order-id">#{order.id}</span>
-        <span className="order-time">⏰ {order.date}</span>
+        <span className="order-time">{order.date}</span>
         <span className={`badge status-badge-${order.status.toLowerCase()}`}>{order.status}</span>
       </div>
       <div className="order-items">
@@ -26,23 +28,28 @@ const AdminOrderCard = ({ order, onStatusChange }) => {
           {order.status === 'Pendiente' && (
             <>
               <button className="btn-accept" onClick={() => onStatusChange(order.id, 'Aceptado')}>
-                ✅ Aceptar
+                Aceptar
               </button>
               <button className="btn-reject" onClick={() => onStatusChange(order.id, 'Rechazado')}>
-                ❌ Rechazar
+                Rechazar
               </button>
             </>
           )}
           {order.status === 'Aceptado' && (
             <button className="btn-kitchen" onClick={() => onStatusChange(order.id, 'En Cocina')}>
-              👨‍🍳 Enviar a Cocina
+              Enviar a Cocina
             </button>
           )}
           {order.status === 'En Cocina' && (
             <span className="info-text">En preparación por cocina...</span>
           )}
           {order.status === 'Listo' && (
-            <span className="success-text">🎉 Pedido Entregado</span>
+            <span className="success-text">Pedido Entregado</span>
+          )}
+          {isProcessed && onDeleteOrder && (
+            <button className="btn-delete" onClick={() => onDeleteOrder(order.id)}>
+              Eliminar Registro
+            </button>
           )}
         </div>
       </div>

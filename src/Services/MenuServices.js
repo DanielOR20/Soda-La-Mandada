@@ -157,3 +157,11 @@ export const updateOrderStatus = (orderId, newStatus) => {
   localStorage.setItem('soda_orders', JSON.stringify(updated));
   return updated;
 };
+
+export const deleteOrder = (orderId) => {
+  const currentOrders = getOrders();
+  const updated = currentOrders.filter(order => order.id !== orderId);
+  localStorage.setItem('soda_orders', JSON.stringify(updated));
+  return updated;
+};
+

@@ -6,7 +6,7 @@ const KitchenOrderList = ({ orders, onFinishCooking }) => {
   if (!orders || orders.length === 0) {
     return (
       <div className="empty-kitchen">
-        <p>🔥 No hay comandas pendientes de cocina por ahora.</p>
+        <p>No hay comandas pendientes de cocina por ahora.</p>
       </div>
     );
   }

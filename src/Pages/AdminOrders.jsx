@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getOrders, updateOrderStatus } from '../Services/MenuServices';
+import { getOrders, updateOrderStatus, deleteOrder } from '../Services/MenuServices';
 import AdminHeader from '../Components/Admin/AdminHeader';
+import AdminMetrics from '../Components/Admin/AdminMetrics';
 import AdminOrderList from '../Components/Admin/AdminOrderList';
 import AdminLogin from '../Components/Admin/AdminLogin';
 
@@ -38,6 +39,11 @@ const AdminOrders = () => {
     setOrders(updated);
   };
 
+  const handleDeleteOrder = (id) => {
+    const updated = deleteOrder(id);
+    setOrders(updated);
+  };
+
   if (!isAuthenticated) {
     return <AdminLogin onLoginSuccess={handleLoginSuccess} />;
   }
@@ -45,7 +51,12 @@ const AdminOrders = () => {
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <AdminHeader onLogout={handleLogout} />
-      <AdminOrderList orders={orders} onStatusChange={handleStatusChange} />
+      <AdminMetrics orders={orders} />
+      <AdminOrderList 
+        orders={orders} 
+        onStatusChange={handleStatusChange} 
+        onDeleteOrder={handleDeleteOrder}
+      />
     </div>
   );
 };

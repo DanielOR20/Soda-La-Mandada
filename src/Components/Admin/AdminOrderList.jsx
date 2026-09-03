@@ -2,7 +2,7 @@ import React from 'react';
 import AdminOrderCard from './AdminOrderCard';
 import './AdminOrderList.css';
 
-const AdminOrderList = ({ orders, onStatusChange }) => {
+const AdminOrderList = ({ orders, onStatusChange, onDeleteOrder }) => {
   if (!orders || orders.length === 0) {
     return <div className="empty-orders">No hay pedidos registrados en este momento.</div>;
   }
@@ -13,7 +13,8 @@ const AdminOrderList = ({ orders, onStatusChange }) => {
         <AdminOrderCard 
           key={order.id} 
           order={order} 
-          onStatusChange={onStatusChange} 
+          onStatusChange={onStatusChange}
+          onDeleteOrder={onDeleteOrder}
         />
       ))}
     </div>

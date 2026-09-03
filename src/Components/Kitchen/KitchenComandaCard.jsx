@@ -6,7 +6,7 @@ const KitchenComandaCard = ({ order, onFinishCooking }) => {
     <div className="kitchen-card">
       <div className="kitchen-card-header">
         <h3>Comanda #{order.id}</h3>
-        <span className="order-time">⏰ {order.date}</span>
+        <span className="order-time">{order.date}</span>
       </div>
       <ul className="kitchen-items-list">
         {order.items.map((item, index) => (
@@ -18,7 +18,7 @@ const KitchenComandaCard = ({ order, onFinishCooking }) => {
       </ul>
       <div className="kitchen-card-footer">
         <button className="btn-ready" onClick={() => onFinishCooking(order.id)}>
-          ✅ ¡Pedido Listo!
+          ¡Pedido Listo!
         </button>
       </div>
     </div>

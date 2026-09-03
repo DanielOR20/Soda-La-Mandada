@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
   return (
     <div style={{ textAlign: 'center', padding: '4rem 1rem' }}>
-      <h1>404 - Página No Encontrada 🔍</h1>
+      <h1>404 - Página No Encontrada</h1>
       <p style={{ margin: '1rem 0 2rem 0', color: '#64748b' }}>
         La ruta a la que intentas acceder no existe en Soda La Mandada.
       </p>

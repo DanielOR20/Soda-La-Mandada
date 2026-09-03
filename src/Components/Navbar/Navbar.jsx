@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="main-navbar">
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo">
-          🍔 Soda La Mandada
+          Soda La Mandada
         </NavLink>
         <div className="navbar-links">
           <NavLink 
@@ -15,19 +15,19 @@ const Navbar = () => {
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             end
           >
-            🍽️ Menú Cliente
+            Menú Cliente
           </NavLink>
           <NavLink 
             to="/admin" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
-            🔒 Admin Pedidos
+            Admin Pedidos
           </NavLink>
           <NavLink 
             to="/cocina" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
-            🔒 Cocina
+            Cocina
           </NavLink>
         </div>
       </div>

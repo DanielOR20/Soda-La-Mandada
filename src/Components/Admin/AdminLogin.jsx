@@ -6,10 +6,12 @@ const AdminLogin = ({ onLoginSuccess }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const ADMIN_USER = import.meta.env.VITE_ADMIN_USER || 'admin';
+  const ADMIN_PASS = import.meta.env.VITE_ADMIN_PASS || 'soda123';
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Credenciales por defecto para el MVP de la Soda
-    if (username.trim() === 'admin' && password === 'soda123') {
+    if (username.trim() === ADMIN_USER && password === ADMIN_PASS) {
       setError('');
       onLoginSuccess();
     } else {
@@ -20,7 +22,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
   return (
     <div className="admin-login-container">
       <div className="admin-login-header">
-        <h2>🔒 Acceso Administrador</h2>
+        <h2>Acceso Administrador</h2>
         <p>Inicia sesión para gestionar los pedidos de la soda.</p>
       </div>
 
@@ -34,7 +36,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
             id="username" 
             value={username} 
             onChange={(e) => setUsername(e.target.value)} 
-            placeholder="Ej: admin" 
+            placeholder="Ingresa tu usuario" 
             required 
           />
         </div>
@@ -57,7 +59,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
       </form>
 
       <div className="hint-box">
-        <p>Solo para administradores</p>
+        <p>Solo para administradores autorizados</p>
       </div>
     </div>
   );

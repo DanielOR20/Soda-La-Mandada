@@ -6,9 +6,12 @@ const KitchenLogin = ({ onLoginSuccess }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const KITCHEN_USER = import.meta.env.VITE_KITCHEN_USER || 'cocina';
+  const KITCHEN_PASS = import.meta.env.VITE_KITCHEN_PASS || 'cocina123';
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username.trim() === 'cocina' && password === 'cocina123') {
+    if (username.trim() === KITCHEN_USER && password === KITCHEN_PASS) {
       setError('');
       onLoginSuccess();
     } else {
@@ -19,7 +22,7 @@ const KitchenLogin = ({ onLoginSuccess }) => {
   return (
     <div className="kitchen-login-container">
       <div className="kitchen-login-header">
-        <h2>👨‍🍳 Acceso a Cocina</h2>
+        <h2>Acceso a Cocina</h2>
         <p>Inicia sesión para ver las comandas en preparación.</p>
       </div>
 
@@ -33,7 +36,7 @@ const KitchenLogin = ({ onLoginSuccess }) => {
             id="kitchen-username" 
             value={username} 
             onChange={(e) => setUsername(e.target.value)} 
-            placeholder="Ej: cocina" 
+            placeholder="Ingresa tu usuario" 
             required 
           />
         </div>
@@ -56,7 +59,7 @@ const KitchenLogin = ({ onLoginSuccess }) => {
       </form>
 
       <div className="hint-box">
-        <p>Solo para personal de cocina</p>
+        <p>Solo para personal de cocina autorizado</p>
       </div>
     </div>
   );
