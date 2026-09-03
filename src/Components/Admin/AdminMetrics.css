@@ -1,0 +1,58 @@
+.admin-metrics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.metric-card.revenue {
+  border-top-color: #10b981;
+}
+
+.metric-card.orders {
+  border-top-color: #3b82f6;
+}
+
+.metric-card.active {
+  border-top-color: #f59e0b;
+}
+
+.metric-card.average {
+  border-top-color: #8b5cf6;
+}
+
+.metric-icon {
+  font-size: 2.2rem;
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.metric-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.2rem;
+}

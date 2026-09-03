@@ -1,13 +1,19 @@
-// src/App.jsx
-// Componente raíz de la aplicación
-
-import AppRoutes from './routes/AppRoutes';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import AppRouter from './Routes/AppRouter';
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <AppRoutes />
-    </div>
+    <BrowserRouter>
+      <div className="app-container">
+        <Navbar />
+        <main className="main-content">
+          <AppRouter />
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 

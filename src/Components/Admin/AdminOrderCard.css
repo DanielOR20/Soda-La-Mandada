@@ -1,0 +1,153 @@
+.order-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 5px solid #cbd5e1;
+}
+
+.order-card.status-pendiente {
+  border-left-color: #f59e0b;
+}
+
+.order-card.status-aceptado {
+  border-left-color: #3b82f6;
+}
+
+.order-card.status-en-cocina {
+  border-left-color: #8b5cf6;
+}
+
+.order-card.status-listo {
+  border-left-color: #10b981;
+}
+
+.order-card.status-rechazado {
+  border-left-color: #ef4444;
+}
+
+.order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.order-id {
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.order-time {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #f1f5f9;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.order-footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.order-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-accept {
+  flex: 1;
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-reject {
+  flex: 1;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-kitchen {
+  width: 100%;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-delete {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #64748b;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.btn-delete:hover {
+  background: #475569;
+}
+
+.info-text {
+  color: #8b5cf6;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.success-text {
+  color: #10b981;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
