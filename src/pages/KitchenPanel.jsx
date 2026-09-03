@@ -2,8 +2,8 @@
 // Pantalla principal de cocina: muestra los pedidos pendientes
 
 import { useState, useEffect } from 'react';
-import OrderCard from './OrderCard';
-import { obtenerPedidos, marcarPedidoListo } from './pedidosService';
+import OrderCard from "../components/Order/OrderCard";
+import { obtenerPedidos, marcarPedidoListo } from "../services/pedidosService";
 
 function KitchenPanel() {
   const [pedidos, setPedidos] = useState([]);

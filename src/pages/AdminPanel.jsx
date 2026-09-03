@@ -2,8 +2,8 @@
 // Panel de administración: muestra TODOS los pedidos y el resumen de ventas del día
 
 import { useState, useEffect } from 'react';
-import OrderCard from './OrderCard';
-import { obtenerPedidos } from './pedidosService';
+import OrderCard from "../components/Order/OrderCard";
+import { obtenerPedidos, marcarPedidoListo } from "../services/pedidosService";
 
 function AdminPanel() {
   const [pedidos, setPedidos] = useState([]);
